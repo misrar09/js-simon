@@ -1,6 +1,6 @@
 // 
 
-// Create 5 prompts so in each prompt user has to insert those numbers
+
 // Check if te inserted numbers are correct 
 
 
@@ -14,25 +14,41 @@ function randNumsDisplay() {
     for (let i = 0; i < 5; i++) {
         numbers.push(getRndInteger(0, 10));
     }
-    document.getElementById("randNums").innerHTML = `Numbers to remember: ${numbers}`
+    document.getElementById("randNums").innerHTML = `Numbers to remember: ${numbers}`;
     console.log(numbers);
 
 
     setTimeout(function () {
         document.getElementById("randNums").innerHTML = '';
-    }, 30000)
+    }, 3000)
 }
 
-randNumsDisplay()
+randNumsDisplay();
 
-setTimeout(function () {
+// Create 5 prompts, in each prompt user has to insert the numbers
+function userInputFunc() {
+    
+    setTimeout(function () {
+    
+        let userNumber = []
+  
+        for (let i = 0; i < 5; i++) {
+            userInput = parseInt(prompt("insert the number"));  
+            userNumber.push(userInput)
+        }
+        
+        console.log(userNumber)      
+        document.getElementById("userNums").innerHTML = `User Numbers: ${userNumber}`;
 
-    for (let i = 0; i < 5; i++) {
-        const userInput = prompt("insert the number");        
-    }
+    
+    }, 3100)
+    
+    
+}
+
+userInputFunc();
 
 
-}, 31000)
 
 
 
