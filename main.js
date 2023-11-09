@@ -1,5 +1,5 @@
 // 
-// Assign 30 sec to those number to disappear
+
 // Create 5 prompts so in each prompt user has to insert those numbers
 // Check if te inserted numbers are correct 
 
@@ -7,9 +7,7 @@
 
 
 
-//Create 5 random numbers and print them in DOM
-
-
+//Create 5 random numbers and print them in DOM and Assign 30 sec timer to numbers to disappear
 
 function randNumsDisplay() {
     let numbers = []
@@ -27,6 +25,15 @@ function randNumsDisplay() {
 
 randNumsDisplay()
 
+setTimeout(function () {
+
+    for (let i = 0; i < 5; i++) {
+        const userInput = prompt("insert the number");        
+    }
+
+
+}, 31000)
+
 
 
 //FUNCTIONS
@@ -35,5 +42,5 @@ function getRndInteger(min, max) {
   }
 
 
-/* const userInput = prompt("insert the number") */
+
 
