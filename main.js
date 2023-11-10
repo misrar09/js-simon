@@ -1,11 +1,5 @@
-// 
 
-
-// Check if te inserted numbers are correct 
-
-
-
-
+// TO DO: Check if te inserted numbers are correct 
 
 //Create 5 random numbers and print them in DOM and Assign 30 sec timer to numbers to disappear
 
@@ -39,7 +33,6 @@ function userInputFunc() {
         
         console.log(userNumber)      
         document.getElementById("userNums").innerHTML = `User Numbers: ${userNumber}`;
-
     
     }, 3100)
     
@@ -47,8 +40,6 @@ function userInputFunc() {
 }
 
 userInputFunc();
-
-
 
 
 
